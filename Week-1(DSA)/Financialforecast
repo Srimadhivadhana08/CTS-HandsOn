@@ -1,4 +1,4 @@
-public class FinancialForecast {
+ public class FinancialForecast {
 
     public static double forecastValue(int year, double initialValue, double annualGrowthRate) {
         if (year == 0) {
