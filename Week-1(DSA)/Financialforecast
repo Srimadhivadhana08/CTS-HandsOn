@@ -1,4 +1,3 @@
-FinancialForecast.java
 public class FinancialForecast {
 
     public static double forecastValue(int year, double initialValue, double annualGrowthRate) {
