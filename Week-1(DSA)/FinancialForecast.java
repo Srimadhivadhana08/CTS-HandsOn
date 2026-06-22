@@ -1,0 +1,18 @@
+public class FinancialForecast {
+
+    public static double forecastValue(int year, double initialValue, double annualGrowthRate) {
+        if (year == 0) {
+            return initialValue;
+        }
+        return forecastValue(year - 1, initialValue, annualGrowthRate) * (1 + annualGrowthRate);
+    }
+
+    public static void main(String[] args) {
+        double startingValue = 10000; // ₹10,000
+        double growthRate = 0.10;     // 10% annual growth
+        int forecastYears = 5;
+
+        double result = forecastValue(forecastYears, startingValue, growthRate);
+        System.out.printf("Forecasted Value after %d years: Rs : %.2f\n", forecastYears, result);
+    }
+}
